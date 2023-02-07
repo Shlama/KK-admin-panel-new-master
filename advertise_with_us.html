@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Kouponkart Website</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Yummy - v1.1.0
+  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <style>
+    .form_class{
+
+        padding: 12px;
+    }
+    .radio{
+
+        width: 20px;
+        height: 20px;
+    }
+    
+    section {
+      overflow: hidden;
+      padding-top:30px;
+    }
+
+    .row span{
+      color: red;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <div class="top_header fixed-top d-flex align-items-center"  >
+
+
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/kouponkart.jpg" alt="" height="60" width="190" >
+        </a>        
+        <input type="text" class="form-control" placeholder="Search Here what you are looking for?" >
+        <!-- <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>  -->
+      </div>
+    </div>
+    <!-- End Header -->
+
+  <!-- ======= Header ======= -->
+  <!-- <header id="header" class="header fixed-top d-flex align-items-center"  style="margin-top: 80px;">
+
+    <div class="container d-flex align-items-center justify-content-between">
+      <nav id="navbar" class="navbar">
+        <ul>
+         
+          <li><a href="#home_about">Home and About Us</a></li>
+          <li><a href="#how_it_works">How It Works</a></li>
+          <li><a href="#Help_faqs">Help & FAQs</a></li>
+          <li><a href="advertise_with_us.html" target="_blank">Advertise with us</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i> 
+
+    </div>
+  </header> -->
+
+
+  <section>
+    <img src="assets/img/advertise.png" alt="" style="width: 100%;"><br><br>
+    <div class="container">
+   <h6>Kouponkart works because of our simple but effective approach – we go to where the customers
+    are. <br><br>
+    Just click on the fill the details below to find out how we can help you connect with yours. <br><br>
+    Let's talk
+    </h6>
+
+    <form action="forms/advertise_with_us.php" method="POST">
+
+        
+    <div>
+        
+        <div class="row">
+    
+            <div class="col-sm form_class">
+             <label class="form_class">First Name <span>*</span></label>
+             <input type="text" name="first_name" class="form-control" pattern="[a-zA-Z\s]*" maxlength="35" required autocomplete="off">
+            </div>
+    
+            <div class="col-sm form_class">
+              <label class="form_class">Last Name<span>*</span></label>
+              <input type="text" name="last_name" class="form-control" pattern="[a-zA-Z\s]*" maxlength="35" required autocomplete="off" >
+            </div>
+            
+        </div>
+    
+        <div class="row">
+    
+            <div class="col-sm form_class">
+             <label class="form_class">Phone Number<span>*</span></label>
+             <input type="tel" name="phone_no" class="form-control" pattern="[0-9]*" maxlength="10" required autocomplete="off" >
+            </div>
+    
+            <div class="col-sm form_class">
+              <label class="form_class">Email Address<span>*</span></label>
+              <input type="email" name="email" maxlength="40" class="form-control" required autocomplete="off" >
+            </div>
+            
+        </div>
+    
+        <div class="row">
+    
+            <div class="col-sm form_class">
+             <label class="form_class" >Bussiness Name<span>*</span></label>
+             <input type="text" name="bussiness_name" class="form-control" maxlength="80" required autocomplete="off" >
+            </div>
+    
+            <div class="col-sm form_class">
+              <label class="form_class" >Street Address</label>
+              <input type="text" name="street_address" class="form-control" maxlength="100" autocomplete="off" >
+            </div>
+            
+        </div>
+    
+        <div class="row">
+    
+            <div class="col-sm form_class">
+             <label class="form_class">Suburb</label>
+             <input type="text" name="suburb" class="form-control" maxlength="100" autocomplete="off" >
+            </div>
+    
+            <div class="col-sm form_class">
+              <label class="form_class">Postcode<span>*</span></label>
+              <input type="text" name="post_code" class="form-control" pattern="[0-9]+" maxlength="6" required autocomplete="off" >
+            </div>
+            
+        </div>
+    
+        <div class="row">
+    
+            <div class="col-sm form_class">
+             <label class="form_class">State<span>*</span></label>
+            <select name="state" id="" class="form-control" required >
+                <option value="">SELECT</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chattisgarh">Chattisgarh</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Dadra & Nagar Haveli and Daman & Diu">Dadra & Nagar Haveli and Daman & Diu</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Ladakh">Ladakh</option>
+                <option value="Lakshadweep Islands">Lakshadweep Islands</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Pondicherry">Pondicherry</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+            </select>
+            </div>
+    
+            </div>
+         </div><!--end form class -->
+    
+         <div class="col-sm form_class">
+            <label class="form_class">About this Location</label><br>
+            <input type="radio" class="radio" name="location" id="bussiness_address" value="This is a business address"> &nbsp;This is a business address <br>
+            <input type="radio" class="radio" name="location" id="residential_address" value="This is a residential address"> &nbsp;This is a residential address
+         </div>
+    
+    
+          <div class="row">
+            <div class="col-sm form_class">
+             <label class="form_class">Type of Business<span>*</span></label>
+             <select name="type_of_bussiness" id="" class="form-control">
+                <option>SELECT</option>
+                <option>Food Outlets & Resturants</option>
+                <option>Hair & Beauty</option>
+                <option>Health & Fitness</option>
+                <option>Alcohol & Liquor</option>
+                <option>Shopping & Retail</option>
+                <option>Travel & Holidays</option>
+                <option>Entertainment & Adventure</option>
+                <option>Trades & Services</option>
+                <option>Tyres & Auto</option>
+                <option>Agency</option>
+                <option>Other</option>
+             </select>
+            
+            </div>
+            <div class="col-sm form_class">
+           <label class="form_class">Business Website or Facebook Page</label>
+            <input type="text" name="bussiness_website" class="form-control" maxlength="100" autocomplete="off">
+            </div>
+          </div>
+    
+    
+          <div class="row">
+            <div class="col-sm form_class">
+             <label class="form_class">Anything else we should know?</label>
+             <textarea class="form-control" name="anything_else" id="" cols="30" rows="4" maxlength="250"></textarea>
+            </div>
+          </div>
+          <br>
+          <input type="submit" value="Get in touch" class="form-control btn btn-danger" style="margin-bottom:10px ;">
+        
+    
+     </div>
+    </form>
+  
+</section>
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4>Address</h4>
+            <p>
+            Bangalore 
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Reservations</h4>
+            <p>
+              <strong>Phone:</strong>*********<br>
+              <strong>Email:</strong> care@kouponkart.com , sales@kouponkart.com<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>
+              <!-- <strong>Mon-Sat: 11AM</strong>- 23PM<br> 
+              Sunday: Closed-->
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; @ Copyright <strong><span>kouponkart</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
+        Powered by <a href="https://shlama.global/" target="_blank">Shlama Private Limited</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
